@@ -40,4 +40,5 @@ if __name__=='__main__':
     file.write('![one]('+imgUrl+')'+'\n')
     file.write('#'+titulo+'\n')
     file.write(title)
-    os.system()
+    os.system('git add -A')
+    os.system('git commit "'+'titulo"')
