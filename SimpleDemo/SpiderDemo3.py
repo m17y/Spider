@@ -15,5 +15,5 @@ def BlogSpider():
                                 )
 
 if __name__=="__main__":
-   CookieSpider()
+   BlogSpider()
    
