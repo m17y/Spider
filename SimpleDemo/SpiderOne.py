@@ -34,13 +34,15 @@ def get_img_data(url):
         pass
 if __name__=='__main__':
     pool = Pool(4)
-    url = get_url(22, 'one')
+    url = get_url(23, 'one')
     imgUrl,titulo,title = get_img_data(url)
     file = open('[ONE]-'+titulo+'.md', 'w')
     file.write('![one]('+imgUrl+')'+'\n')
     file.write('#'+titulo+'\n')
     file.write(title)
+#     tmp = os.popen('dir').readlines()
+#     print tmp
     os.system('git add -A')
-    os.system('git commit "'+titulo+'"')
-    temp = os.popen('git push origin master').readlines()
-    print temp
+#     os.system('git commit -m "'+titulo+'"')
+    os.system('git commit -m "test"')
+    os.system('git push origin master')
