@@ -40,6 +40,7 @@ if __name__=='__main__':
     file.write('![one]('+imgUrl+')'+'\n')
     file.write('#'+titulo+'\n')
     file.write(title)
+    file.close()
 #     tmp = os.popen('dir').readlines()
 #     print tmp
     os.system('git add -A')
