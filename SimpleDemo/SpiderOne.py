@@ -46,4 +46,4 @@ if __name__=='__main__':
     os.system('git add -A')
 #     os.system('git commit -m "'+titulo+'"')
     os.system('git commit -m "test"')
-    os.system('git push origin master')
+    os.system('git push')
