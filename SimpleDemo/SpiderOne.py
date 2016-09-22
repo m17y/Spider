@@ -34,7 +34,7 @@ def get_img_data(url):
         pass
 if __name__=='__main__':
     pool = Pool(4)
-    url = get_url(27, 'one')
+    url = get_url(28, 'one')
     imgUrl,titulo,title = get_img_data(url)
     file = open('[ONE]-'+titulo+'.md', 'w')
     file.write('![one]('+imgUrl+')'+'\n')
