@@ -41,4 +41,6 @@ if __name__=='__main__':
     file.write('#'+titulo+'\n')
     file.write(title)
     os.system('git add -A')
-    os.system('git commit "'+'titulo"')
+    os.system('git commit "'+titulo+'"')
+    temp = os.popen('git push origin master').readlines()
+    print temp
